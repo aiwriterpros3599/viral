@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTO #4: DFY Content Packs - ContentViral Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+        }
+        
+        .headline {
+            font-size: 3rem;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+        
+        .subheadline {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+        
+        .price-tag {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+        
+        .price-strike {
+            text-decoration: line-through;
+            color: #ef4444;
+        }
+        
+        .feature-box {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .cta-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+            }
+            
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+            }
+            
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+            }
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, rgba(252, 211, 77, 0.5) 0%, rgba(252, 211, 77, 0.5) 100%);
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50x50" alt="ContentViral Pro Logo" class="h-10">
+                <h1 class="ml-2 text-xl font-bold text-amber-600">ContentViral Pro</h1>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center">
+                    <div class="mr-4">
+                        <span class="text-sm font-medium">One-Time Offer:</span>
+                        <span class="ml-2 text-red-600 font-bold">Expires in <span id="countdown">10:00</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <span class="inline-block bg-white text-amber-600 px-4 py-1 rounded-full text-sm font-bold mb-6">SPECIAL ONE-TIME OFFER</span>
+            <h1 class="headline mb-6">Done-For-You Content Packs</h1>
+            <p class="subheadline mb-8 max-w-4xl mx-auto">Get instant access to 1,000+ ready-to-use content pieces across 20+ profitable niches - all pre-optimized for maximum engagement and affiliate earnings.</p>
+            
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-10 p-6 rounded-xl mb-8">
+                <p class="text-xl font-bold">This Special Upgrade Is Only Available Right Now</p>
+                <p class="text-lg mt-2">You will NOT see this offer again after you leave this page!</p>
+            </div>
+            
+            <div class="flex justify-center">
+                <a href="#pricing" class="cta-button bg-white hover:bg-gray-100 text-amber-600 font-bold py-4 px-8 rounded-full text-center text-lg transition duration-300">
+                    Yes! Upgrade My Account Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Skip the Content Creation Process Entirely</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">With our Done-For-You Content Packs, you get instant access to 1,000+ ready-to-use content pieces that you can publish immediately to start generating engagement and affiliate commissions.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://via.placeholder.com/600x400" alt="Content Library" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Massive Content Library</h3>
+                    <p class="text-lg text-gray-700 mb-6">Our team of professional content creators and copywriters has created 1,000+ high-quality content pieces across 20+ profitable niches. Each piece is carefully crafted to maximize engagement and affiliate earnings.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">1,000+ Ready-to-Use Content Pieces</span> - Just copy, paste, and publish to start earning</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">20+ Profitable Niches</span> - Including health, wealth, relationships, tech, and more</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Platform-Specific Formats</span> - Optimized for Twitter, LinkedIn, Instagram, Facebook, TikTok, and more</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Pre-Optimized for Affiliate Earnings</span> - Strategic product placement opportunities in every piece</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+                    <img src="https://via.placeholder.com/600x400" alt="Content Calendar" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">12-Month Content Calendar</h3>
+                    <p class="text-lg text-gray-700 mb-6">Never worry about what to post again. Our 12-month content calendar tells you exactly what to post each day for maximum engagement and earnings based on seasonal trends and buying patterns.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">365 Days of Content</span> - Know exactly what to post every single day</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Seasonal Optimization</span> - Content aligned with holidays, buying seasons, and trends</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Multi-Platform Strategy</span> - Coordinated posting schedule across all platforms</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Revenue Maximization</span> - Strategic product promotion timing for highest conversion rates</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Niches Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">20+ Profitable Niches Included</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Each niche pack includes 50+ content pieces optimized for different platforms and affiliate opportunities.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Health & Fitness</h3>
+                    <p class="text-gray-600 mb-3">Weight loss, nutrition, workout routines, supplements, wellness</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Wealth & Finance</h3>
+                    <p class="text-gray-600 mb-3">Investing, personal finance, cryptocurrency, passive income, budgeting</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Relationships</h3>
+                    <p class="text-gray-600 mb-3">Dating, marriage, parenting, communication, self-improvement</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Technology</h3>
+                    <p class="text-gray-600 mb-3">Gadgets, software, AI tools, smart home, productivity apps</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Travel</h3>
+                    <p class="text-gray-600 mb-3">Destinations, budget travel, luxury experiences, travel gear, tips</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Home & Garden</h3>
+                    <p class="text-gray-600 mb-3">Interior design, DIY projects, gardening, organization, decor</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Food & Cooking</h3>
+                    <p class="text-gray-600 mb-3">Recipes, kitchen gadgets, meal prep, diets, cooking techniques</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Fashion & Beauty</h3>
+                    <p class="text-gray-600 mb-3">Style tips, skincare, makeup, accessories, seasonal trends</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Business & Marketing</h3>
+                    <p class="text-gray-600 mb-3">Entrepreneurship, digital marketing, e-commerce, leadership</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Gaming & Entertainment</h3>
+                    <p class="text-gray-600 mb-3">Video games, streaming, movies, TV shows, gaming gear</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Parenting</h3>
+                    <p class="text-gray-600 mb-3">Baby products, education, activities, family health, parenting tips</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="feature-box bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-amber-500 text-3xl mb-3">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Pets</h3>
+                    <p class="text-gray-600 mb-3">Pet care, products, training, health, pet food, accessories</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium">50+ Content Pieces</span>
+                </div>
+                
+                <div class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 text-center mt-6">
+                    <p class="text-gray-600">Plus 8+ more profitable niches included in the package!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Why You Need Done-For-You Content Packs</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Save time, increase engagement, and maximize your earnings with our pre-made content.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-amber-500 text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Save 100+ Hours Every Month</h3>
+                    <p class="text-gray-700">Stop spending hours creating content from scratch. With our DFY Content Packs, you can publish high-quality content in seconds instead of hours.</p>
+                    <div class="mt-6 bg-amber-50 p-4 rounded-lg">
+                        <p class="text-amber-800 italic">"I used to spend 3-4 hours daily creating content. Now I can schedule an entire month's worth in just 30 minutes!" - Rachel K.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-amber-500 text-4xl mb-4">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Proven to Engage & Convert</h3>
+                    <p class="text-gray-700">Each content piece has been tested and optimized for maximum engagement and conversion rates across different platforms.</p>
+                    <div class="mt-6 bg-amber-50 p-4 rounded-lg">
+                        <p class="text-amber-800 italic">"My engagement rate increased by 317% in the first week of using these content packs. The affiliate conversions are incredible!" - Michael T.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-amber-500 text-4xl mb-4">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Start Earning Immediately</h3>
+                    <p class="text-gray-700">Each content piece is strategically designed with affiliate opportunities. Just add your links and start earning commissions right away.</p>
+                    <div class="mt-6 bg-amber-50 p-4 rounded-lg">
+                        <p class="text-amber-800 italic">"I made $1,247 in my first week just by posting the DFY content with my affiliate links. It's literally copy, paste, profit!" - Sarah J.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">DIY vs. Done-For-You Content</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See why our Done-For-You Content Packs are the smart choice for serious content creators and marketers.</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-xl shadow-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-4 px-6 bg-gray-100 text-left text-lg font-bold text-gray-700 uppercase tracking-wider rounded-tl-xl">Comparison</th>
+                            <th class="py-4 px-6 bg-gray-100 text-center text-lg font-bold text-gray-700 uppercase tracking-wider">DIY Content Creation</th>
+                            <th class="py-4 px-6 bg-amber-500 text-center text-lg font-bold text-white uppercase tracking-wider rounded-tr-xl">DFY Content Packs</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Time Required</td>
+                            <td class="py-4 px-6 text-center text-red-500">3-4 hours daily</td>
+                            <td class="py-4 px-6 text-center text-green-600">Minutes per week</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Content Quality</td>
+                            <td class="py-4 px-6 text-center text-gray-600">Varies based on skill</td>
+                            <td class="py-4 px-6 text-center text-green-600">Professional quality</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Engagement Rate</td>
+                            <td class="py-4 px-6 text-center text-gray-600">Unpredictable</td>
+                            <td class="py-4 px-6 text-center text-green-600">Tested & optimized</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Conversion Rate</td>
+                            <td class="py-4 px-6 text-center text-gray-600">Trial and error</td>
+                            <td class="py-4 px-6 text-center text-green-600">Proven to convert</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Consistency</td>
+                            <td class="py-4 px-6 text-center text-red-500">Difficult to maintain</td>
+                            <td class="py-4 px-6 text-center text-green-600">365 days covered</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Multi-Platform Optimization</td>
+                            <td class="py-4 px-6 text-center text-red-500">Time-consuming</td>
+                            <td class="py-4 px-6 text-center text-green-600">Already optimized</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Niche Research</td>
+                            <td class="py-4 px-6 text-center text-red-500">Hours of research</td>
+                            <td class="py-4 px-6 text-center text-green-600">20+ niches ready</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Time to First Dollar</td>
+                            <td class="py-4 px-6 text-center text-red-500">Weeks or months</td>
+                            <td class="py-4 px-6 text-center text-green-600">As soon as today</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Cost (Time + Money)</td>
+                            <td class="py-4 px-6 text-center text-red-500">$1,000s in time value</td>
+                            <td class="py-4 px-6 text-center text-green-600">One low payment</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-amber-100 text-amber-800 px-4 py-1 rounded-full text-sm font-bold mb-4">SPECIAL ONE-TIME OFFER</span>
+                <h2 class="text-4xl font-bold mb-4">Get Instant Access to DFY Content Packs</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">This offer is only available right now and will not be offered again.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-amber-500 to-red-500 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/3 mb-8 md:mb-0">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Done-For-You Content Packs</h3>
+                            <ul class="space-y-4 text-white">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-white mt-1 mr-3"></i>
+                                    <span>1,000+ ready-to-use content pieces</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-white mt-1 mr-3"></i>
+                                    <span>20+ profitable niches included</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-white mt-1 mr-3"></i>
+                                    <span>Multi-platform content formats</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-white mt-1 mr-3"></i>
+                                    <span>12-month content calendar</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-white mt-1 mr-3"></i>
+                                    <span>Pre-optimized for affiliate earnings</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-white mt-1 mr-3"></i>
+                                    <span>Seasonal content strategy included</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-8">
+                                <div class="inline-block bg-white text-amber-600 px-4 py-2 rounded-full text-sm font-bold">
+                                    One-Time Special Offer: 75% OFF
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/3 bg-white bg-opacity-10 p-6 rounded-xl text-center">
+                            <div class="text-white mb-4">
+                                <span class="text-lg">Regular Price</span>
+                                <div class="price-strike text-2xl font-bold">$397</div>
+                            </div>
+                            
+                            <div class="text-white mb-6">
+                                <span class="text-lg">Today Only</span>
+                                <div class="price-tag text-white">$97</div>
+                                <span class="text-lg">one-time payment</span>
+                            </div>
+                            
+                            <a href="#" class="cta-button block w-full bg-white hover:bg-gray-100 text-amber-600 font-bold py-4 px-6 rounded-xl text-center text-lg transition duration-300 mb-4">
+                                Yes! Add This Upgrade
+                            </a>
+                            
+                            <a href="#" class="block w-full text-white hover:text-gray-200 font-medium py-2 px-6 text-center text-sm transition duration-300">
+                                No thanks, I'll pass on this offer
+                            </a>
+                            
+                            <div class="text-white text-sm mt-4">
+                                <p>30-Day Money-Back Guarantee</p>
+                                <p class="mt-2">Secure Payment</p>
+                                <div class="flex justify-center mt-2">
+                                    <i class="fab fa-cc-visa mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-mastercard mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-amex mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-paypal mx-1 text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="inline-block bg-white border-2 border-green-500 rounded-full p-6 shadow-lg">
+                    <div class="text-green-600 text-4xl mb-2">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">30-Day Money-Back Guarantee</h4>
+                    <p class="text-gray-600 mt-2">If you're not completely satisfied with the DFY Content Packs, we'll refund your purchase - no questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-amber-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Don't Miss This One-Time Opportunity</h2>
+            <p class="text-xl text-amber-100 max-w-3xl mx-auto mb-10">Get instant access to 1,000+ ready-to-use content pieces that will save you hundreds of hours and help you start earning affiliate commissions immediately.</p>
+            
+            <div class="mb-10">
+                <div class="text-white text-2xl md:text-3xl font-bold mb-4">
+                    <span id="countdown-final">10:00</span> Remaining
+                </div>
+                <p class="text-amber-100">This offer expires when the timer hits zero</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="cta-button inline-block bg-white hover:bg-gray-100 text-amber-600 font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                    Yes! Add This Upgrade Now
+                </a>
+                
+                <a href="#" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-amber-600 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                    No Thanks, I'll Pass
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 ContentViral Pro. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Refund Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple countdown timer
+        function updateCountdown() {
+            const countdownEl = document.getElementById('countdown');
+            const countdownFinalEl = document.getElementById('countdown-final');
+            
+            if (!countdownEl || !countdownFinalEl) return;
+            
+            let minutes = 10;
+            let seconds = 0;
+            
+            setInterval(() => {
+                seconds--;
+                
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                }
+                
+                if (minutes < 0) {
+                    minutes = 0;
+                    seconds = 0;
+                }
+                
+                const formattedTime = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                countdownEl.textContent = formattedTime;
+                countdownFinalEl.textContent = formattedTime;
+            }, 1000);
+        }
+        
+        // Initialize countdown
+        document.addEventListener('DOMContentLoaded', updateCountdown);
+    </script>
+</body>
+</html>

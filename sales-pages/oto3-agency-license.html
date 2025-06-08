@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTO #3: Agency License - ContentViral Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+        }
+        
+        .headline {
+            font-size: 3rem;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+        
+        .subheadline {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+        
+        .price-tag {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+        
+        .price-strike {
+            text-decoration: line-through;
+            color: #ef4444;
+        }
+        
+        .feature-box {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .cta-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+            }
+            
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+            }
+            
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+            }
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, rgba(252, 211, 77, 0.5) 0%, rgba(252, 211, 77, 0.5) 100%);
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50x50" alt="ContentViral Pro Logo" class="h-10">
+                <h1 class="ml-2 text-xl font-bold text-indigo-600">ContentViral Pro</h1>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center">
+                    <div class="mr-4">
+                        <span class="text-sm font-medium">One-Time Offer:</span>
+                        <span class="ml-2 text-red-600 font-bold">Expires in <span id="countdown">10:00</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <span class="inline-block bg-yellow-400 text-indigo-900 px-4 py-1 rounded-full text-sm font-bold mb-6">SPECIAL ONE-TIME OFFER</span>
+            <h1 class="headline mb-6">Unlock the Agency License</h1>
+            <p class="subheadline mb-8 max-w-4xl mx-auto">Create unlimited client accounts, charge premium fees, and build a thriving agency business with ContentViral Pro.</p>
+            
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-10 p-6 rounded-xl mb-8">
+                <p class="text-xl font-bold">This Special Upgrade Is Only Available Right Now</p>
+                <p class="text-lg mt-2">You will NOT see this offer again after you leave this page!</p>
+            </div>
+            
+            <div class="flex justify-center">
+                <a href="#pricing" class="cta-button bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-4 px-8 rounded-full text-center text-lg transition duration-300">
+                    Yes! Upgrade My Account Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Turn ContentViral Pro Into a Profitable Agency Business</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">With the Agency License, you can create unlimited client accounts, charge premium fees, and build a thriving agency business with minimal effort.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://via.placeholder.com/600x400" alt="Agency Dashboard" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Multi-Client Management Dashboard</h3>
+                    <p class="text-lg text-gray-700 mb-6">Manage all your clients from a single, intuitive dashboard. Create unlimited client accounts, monitor performance, and deliver results that will keep your clients coming back for more.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Unlimited Client Accounts</span> - Create as many client accounts as you need with no additional fees</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Client Performance Monitoring</span> - Track content performance and earnings for each client</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Customizable Client Permissions</span> - Control exactly what each client can access and modify</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Bulk Content Creation</span> - Create content for multiple clients simultaneously</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+                    <img src="https://via.placeholder.com/600x400" alt="White Label Dashboard" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Complete White Label Solution</h3>
+                    <p class="text-lg text-gray-700 mb-6">Rebrand ContentViral Pro as your own proprietary software. Add your logo, colors, and branding to create a seamless experience for your clients.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Custom Branding</span> - Add your logo, colors, and branding elements</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Custom Domain Integration</span> - Use your own domain for a professional appearance</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">White Label Reports</span> - Generate professional reports with your branding</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Email Notifications</span> - Automated emails sent with your branding</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">The Agency Business Model: Charge $500-$2,000 Per Month</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Here's how you can build a six-figure agency business with ContentViral Pro.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Client Acquisition</h3>
+                    <p class="text-gray-700">Target businesses that need content creation and social media management services. Offer a free content audit to demonstrate the value you can provide.</p>
+                    <div class="mt-6 bg-indigo-50 p-4 rounded-lg">
+                        <p class="text-indigo-800">Potential clients: Local businesses, e-commerce stores, coaches, consultants, real estate agents, and more.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Service Packages</h3>
+                    <p class="text-gray-700">Create tiered service packages based on the number of platforms, content pieces, and additional services like strategy development.</p>
+                    <div class="mt-6 bg-indigo-50 p-4 rounded-lg">
+                        <p class="text-indigo-800">Example pricing: $500/month (basic), $1,000/month (standard), $2,000/month (premium)</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Scaling Your Agency</h3>
+                    <p class="text-gray-700">As you add more clients, ContentViral Pro handles the heavy lifting of content creation, allowing you to scale without hiring additional staff.</p>
+                    <div class="mt-6 bg-indigo-50 p-4 rounded-lg">
+                        <p class="text-indigo-800">With just 10 clients at an average of $1,000/month, you're generating $10,000 monthly revenue with minimal overhead.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-center">Potential Monthly Revenue</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-6 bg-indigo-100 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">Number of Clients</th>
+                                <th class="py-3 px-6 bg-indigo-100 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">Basic ($500/mo)</th>
+                                <th class="py-3 px-6 bg-indigo-100 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">Standard ($1,000/mo)</th>
+                                <th class="py-3 px-6 bg-indigo-100 text-left text-xs font-medium text-indigo-600 uppercase tracking-wider">Premium ($2,000/mo)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-4 px-6 text-sm font-medium text-gray-900">5 Clients</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$2,500/month</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$5,000/month</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$10,000/month</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 text-sm font-medium text-gray-900">10 Clients</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$5,000/month</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$10,000/month</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$20,000/month</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 text-sm font-medium text-gray-900">20 Clients</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$10,000/month</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$20,000/month</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$40,000/month</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 text-sm font-medium text-gray-900">50 Clients</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$25,000/month</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$50,000/month</td>
+                                <td class="py-4 px-6 text-sm text-gray-700">$100,000/month</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agency Tools Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Agency Tools & Resources Included</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Everything you need to launch, grow, and scale your agency business.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Client Acquisition Kit</h3>
+                    <p class="text-gray-700 mb-4">Everything you need to attract and sign new clients.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Sales presentation templates
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Client proposal templates
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Service agreement contracts
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Cold email outreach scripts
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Discovery call framework
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Marketing Materials</h3>
+                    <p class="text-gray-700 mb-4">Professionally designed marketing materials to promote your agency.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Agency website templates
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Case study templates
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Social media graphics
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Email marketing templates
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Video testimonial framework
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Client Management System</h3>
+                    <p class="text-gray-700 mb-4">Tools and templates to manage client relationships efficiently.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Client onboarding workflow
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Content approval system
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Monthly reporting templates
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Client communication scripts
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Feedback collection forms
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Agency Growth Training</h3>
+                    <p class="text-gray-700 mb-4">Step-by-step training to build and scale your agency.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Agency business model blueprint
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Client acquisition strategies
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Pricing and packaging guide
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Scaling systems and processes
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Team building and outsourcing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">ContentViral Pro vs. ContentViral Pro + Agency License</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See how much more you get with this powerful upgrade.</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-xl shadow-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-4 px-6 bg-gray-100 text-left text-lg font-bold text-gray-700 uppercase tracking-wider rounded-tl-xl">Features</th>
+                            <th class="py-4 px-6 bg-gray-100 text-center text-lg font-bold text-gray-700 uppercase tracking-wider">ContentViral Pro</th>
+                            <th class="py-4 px-6 bg-indigo-600 text-center text-lg font-bold text-white uppercase tracking-wider rounded-tr-xl">With Agency License</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Personal Use</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Client Accounts</td>
+                            <td class="py-4 px-6 text-center text-red-500">1 Account Only</td>
+                            <td class="py-4 px-6 text-center text-green-600">Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">White Label Branding</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Custom Domain</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Client Management Dashboard</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Client Acquisition Kit</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Marketing Materials</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Agency Growth Training</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Commercial Rights</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Potential Monthly Revenue</td>
+                            <td class="py-4 px-6 text-center font-bold text-gray-700">Limited</td>
+                            <td class="py-4 px-6 text-center font-bold text-green-600">$10,000 - $100,000+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-bold mb-4">SPECIAL ONE-TIME OFFER</span>
+                <h2 class="text-4xl font-bold mb-4">Unlock the Agency License Today</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">This offer is only available right now and will not be offered again.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-indigo-500 to-pink-600 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/3 mb-8 md:mb-0">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Agency License</h3>
+                            <ul class="space-y-4 text-white">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Create unlimited client accounts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Complete white label branding</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Custom domain integration</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Client management dashboard</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Client acquisition kit & marketing materials</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Agency growth training program</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-8">
+                                <div class="inline-block bg-white text-indigo-600 px-4 py-2 rounded-full text-sm font-bold">
+                                    One-Time Special Offer: 50% OFF
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/3 bg-white bg-opacity-10 p-6 rounded-xl text-center">
+                            <div class="text-white mb-4">
+                                <span class="text-lg">Regular Price</span>
+                                <div class="price-strike text-2xl font-bold">$497</div>
+                            </div>
+                            
+                            <div class="text-white mb-6">
+                                <span class="text-lg">Today Only</span>
+                                <div class="price-tag text-yellow-300">$247</div>
+                                <span class="text-lg">one-time payment</span>
+                            </div>
+                            
+                            <a href="#" class="cta-button block w-full bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-4 px-6 rounded-xl text-center text-lg transition duration-300 mb-4">
+                                Yes! Add This Upgrade
+                            </a>
+                            
+                            <a href="#" class="block w-full text-white hover:text-gray-200 font-medium py-2 px-6 text-center text-sm transition duration-300">
+                                No thanks, I'll pass on this offer
+                            </a>
+                            
+                            <div class="text-white text-sm mt-4">
+                                <p>30-Day Money-Back Guarantee</p>
+                                <p class="mt-2">Secure Payment</p>
+                                <div class="flex justify-center mt-2">
+                                    <i class="fab fa-cc-visa mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-mastercard mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-amex mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-paypal mx-1 text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="inline-block bg-white border-2 border-green-500 rounded-full p-6 shadow-lg">
+                    <div class="text-green-600 text-4xl mb-2">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">30-Day Money-Back Guarantee</h4>
+                    <p class="text-gray-600 mt-2">If you're not completely satisfied with the Agency License, we'll refund your purchase - no questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-indigo-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Don't Miss This One-Time Opportunity</h2>
+            <p class="text-xl text-indigo-200 max-w-3xl mx-auto mb-10">The Agency License will transform ContentViral Pro from a personal tool into a profitable business that can generate $10,000, $20,000, or even $100,000+ per month.</p>
+            
+            <div class="mb-10">
+                <div class="text-white text-2xl md:text-3xl font-bold mb-4">
+                    <span id="countdown-final">10:00</span> Remaining
+                </div>
+                <p class="text-indigo-200">This offer expires when the timer hits zero</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="cta-button inline-block bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                    Yes! Add This Upgrade Now
+                </a>
+                
+                <a href="#" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                    No Thanks, I'll Pass
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 ContentViral Pro. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Refund Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple countdown timer
+        function updateCountdown() {
+            const countdownEl = document.getElementById('countdown');
+            const countdownFinalEl = document.getElementById('countdown-final');
+            
+            if (!countdownEl || !countdownFinalEl) return;
+            
+            let minutes = 10;
+            let seconds = 0;
+            
+            setInterval(() => {
+                seconds--;
+                
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                }
+                
+                if (minutes < 0) {
+                    minutes = 0;
+                    seconds = 0;
+                }
+                
+                const formattedTime = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                countdownEl.textContent = formattedTime;
+                countdownFinalEl.textContent = formattedTime;
+            }, 1000);
+        }
+        
+        // Initialize countdown
+        document.addEventListener('DOMContentLoaded', updateCountdown);
+    </script>
+</body>
+</html>

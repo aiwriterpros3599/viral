@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTO #1: Advanced Research Suite - ContentViral Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        
+        .headline {
+            font-size: 3rem;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+        
+        .subheadline {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+        
+        .price-tag {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+        
+        .price-strike {
+            text-decoration: line-through;
+            color: #ef4444;
+        }
+        
+        .feature-box {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .cta-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.7);
+            }
+            
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+            }
+            
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+            }
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, rgba(252, 211, 77, 0.5) 0%, rgba(252, 211, 77, 0.5) 100%);
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50x50" alt="ContentViral Pro Logo" class="h-10">
+                <h1 class="ml-2 text-xl font-bold text-indigo-600">ContentViral Pro</h1>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center">
+                    <div class="mr-4">
+                        <span class="text-sm font-medium">One-Time Offer:</span>
+                        <span class="ml-2 text-red-600 font-bold">Expires in <span id="countdown">10:00</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <span class="inline-block bg-yellow-400 text-indigo-900 px-4 py-1 rounded-full text-sm font-bold mb-6">SPECIAL ONE-TIME OFFER</span>
+            <h1 class="headline mb-6">Unlock the Advanced Research Suite</h1>
+            <p class="subheadline mb-8 max-w-4xl mx-auto">Discover viral trends before your competitors and create content that's guaranteed to go viral with our powerful AI-driven research tools.</p>
+            
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-10 p-6 rounded-xl mb-8">
+                <p class="text-xl font-bold">This Special Upgrade Is Only Available Right Now</p>
+                <p class="text-lg mt-2">You will NOT see this offer again after you leave this page!</p>
+            </div>
+            
+            <div class="flex justify-center">
+                <a href="#pricing" class="cta-button bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-4 px-8 rounded-full text-center text-lg transition duration-300">
+                    Yes! Upgrade My Account Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">What If You Could Predict Viral Trends Before They Happen?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">The Advanced Research Suite gives you the power to identify viral opportunities before your competitors, allowing you to create content that's guaranteed to get maximum engagement and earnings.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://via.placeholder.com/600x400" alt="Viral Trend Detection Dashboard" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Viral Trend Detection System</h3>
+                    <p class="text-lg text-gray-700 mb-6">Our advanced AI analyzes millions of social media posts across all major platforms to identify emerging trends before they peak. This gives you a critical time advantage to create content that rides the viral wave from the beginning.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Social Media Trend Analysis</span> - Monitor trends across Twitter, Instagram, TikTok, YouTube, and more in real-time</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Viral Pattern Recognition</span> - Identify content patterns that consistently go viral in your niche</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Optimal Timing Prediction</span> - Know exactly when to publish your content for maximum reach</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Hashtag Performance Tracking</span> - Discover the most effective hashtags for your content</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+                    <img src="https://via.placeholder.com/600x400" alt="Competitor Analysis Dashboard" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Comprehensive Competitor Analysis</h3>
+                    <p class="text-lg text-gray-700 mb-6">Gain unprecedented insights into your competitors' content strategies. Identify what's working for them, find content gaps they're missing, and create superior content that outperforms theirs every time.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Multi-Platform Content Scraping</span> - Analyze competitor content across all major platforms</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Engagement Pattern Analysis</span> - Understand what drives engagement for your competitors</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Content Strategy Reverse Engineering</span> - Decode your competitors' most successful strategies</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-indigo-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Gap Analysis with Opportunity Scoring</span> - Identify untapped content opportunities with high potential</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">How the Advanced Research Suite Will Transform Your Results</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">With these powerful research tools at your fingertips, you'll see immediate improvements in your content performance and earnings.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">2-5x Higher Engagement</h3>
+                    <p class="text-gray-700">By creating content based on emerging trends and viral patterns, you'll see your engagement rates skyrocket across all platforms.</p>
+                    <div class="mt-6 bg-indigo-50 p-4 rounded-lg">
+                        <p class="text-indigo-800 italic">"My engagement rate jumped from 2.3% to 11.7% in just two weeks after using the Advanced Research Suite." - Michael T.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Faster Audience Growth</h3>
+                    <p class="text-gray-700">Riding viral trends early means your content gets seen by more people, leading to rapid follower growth across all your platforms.</p>
+                    <div class="mt-6 bg-indigo-50 p-4 rounded-lg">
+                        <p class="text-indigo-800 italic">"I gained over 15,000 new followers in a single month after implementing the trend detection strategies." - Sarah K.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Increased Affiliate Earnings</h3>
+                    <p class="text-gray-700">More engagement and a larger audience means more clicks on your affiliate links and significantly higher earnings.</p>
+                    <div class="mt-6 bg-indigo-50 p-4 rounded-lg">
+                        <p class="text-indigo-800 italic">"My monthly affiliate income increased from $1,200 to over $4,800 after using the competitor analysis tools." - David R.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">ContentViral Pro vs. ContentViral Pro + Advanced Research Suite</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See how much more you get with this powerful upgrade.</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-xl shadow-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-4 px-6 bg-gray-100 text-left text-lg font-bold text-gray-700 uppercase tracking-wider rounded-tl-xl">Features</th>
+                            <th class="py-4 px-6 bg-gray-100 text-center text-lg font-bold text-gray-700 uppercase tracking-wider">ContentViral Pro</th>
+                            <th class="py-4 px-6 bg-indigo-600 text-center text-lg font-bold text-white uppercase tracking-wider rounded-tr-xl">With Advanced Research Suite</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Multi-Platform Content Creation</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Automatic Affiliate Link Insertion</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Basic Analytics</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Social Media Trend Analysis</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Viral Pattern Recognition</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Optimal Timing Prediction</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Competitor Content Analysis</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Content Gap Analysis</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Audience Overlap Insights</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Viral Coefficient Calculation</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-bold mb-4">SPECIAL ONE-TIME OFFER</span>
+                <h2 class="text-4xl font-bold mb-4">Unlock the Advanced Research Suite Today</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">This offer is only available right now and will not be offered again.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/3 mb-8 md:mb-0">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Advanced Research Suite</h3>
+                            <ul class="space-y-4 text-white">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Social Media Trend Analysis across all major platforms</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Viral Pattern Recognition with predictive algorithms</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Optimal Timing Prediction for maximum reach</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Comprehensive Competitor Analysis tools</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Content Gap Analysis with opportunity scoring</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Audience Overlap and Demographic Insights</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-8">
+                                <div class="inline-block bg-white text-indigo-600 px-4 py-2 rounded-full text-sm font-bold">
+                                    One-Time Special Offer: 50% OFF
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/3 bg-white bg-opacity-10 p-6 rounded-xl text-center">
+                            <div class="text-white mb-4">
+                                <span class="text-lg">Regular Price</span>
+                                <div class="price-strike text-2xl font-bold">$197</div>
+                            </div>
+                            
+                            <div class="text-white mb-6">
+                                <span class="text-lg">Today Only</span>
+                                <div class="price-tag text-yellow-300">$97</div>
+                                <span class="text-lg">one-time payment</span>
+                            </div>
+                            
+                            <a href="#" class="cta-button block w-full bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-4 px-6 rounded-xl text-center text-lg transition duration-300 mb-4">
+                                Yes! Add This Upgrade
+                            </a>
+                            
+                            <a href="#" class="block w-full text-white hover:text-gray-200 font-medium py-2 px-6 text-center text-sm transition duration-300">
+                                No thanks, I'll pass on this offer
+                            </a>
+                            
+                            <div class="text-white text-sm mt-4">
+                                <p>30-Day Money-Back Guarantee</p>
+                                <p class="mt-2">Secure Payment</p>
+                                <div class="flex justify-center mt-2">
+                                    <i class="fab fa-cc-visa mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-mastercard mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-amex mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-paypal mx-1 text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="inline-block bg-white border-2 border-green-500 rounded-full p-6 shadow-lg">
+                    <div class="text-green-600 text-4xl mb-2">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">30-Day Money-Back Guarantee</h4>
+                    <p class="text-gray-600 mt-2">If you're not completely satisfied with the Advanced Research Suite, we'll refund your purchase - no questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-indigo-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Don't Miss This One-Time Opportunity</h2>
+            <p class="text-xl text-indigo-200 max-w-3xl mx-auto mb-10">The Advanced Research Suite will give you the competitive edge you need to create viral content that drives massive engagement and affiliate earnings.</p>
+            
+            <div class="mb-10">
+                <div class="text-white text-2xl md:text-3xl font-bold mb-4">
+                    <span id="countdown-final">10:00</span> Remaining
+                </div>
+                <p class="text-indigo-200">This offer expires when the timer hits zero</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="cta-button inline-block bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                    Yes! Add This Upgrade Now
+                </a>
+                
+                <a href="#" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                    No Thanks, I'll Pass
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 ContentViral Pro. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Refund Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple countdown timer
+        function updateCountdown() {
+            const countdownEl = document.getElementById('countdown');
+            const countdownFinalEl = document.getElementById('countdown-final');
+            
+            if (!countdownEl || !countdownFinalEl) return;
+            
+            let minutes = 10;
+            let seconds = 0;
+            
+            setInterval(() => {
+                seconds--;
+                
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                }
+                
+                if (minutes < 0) {
+                    minutes = 0;
+                    seconds = 0;
+                }
+                
+                const formattedTime = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                countdownEl.textContent = formattedTime;
+                countdownFinalEl.textContent = formattedTime;
+            }, 1000);
+        }
+        
+        // Initialize countdown
+        document.addEventListener('DOMContentLoaded', updateCountdown);
+    </script>
+</body>
+</html>

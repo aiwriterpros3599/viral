@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTO #2: Monetization Maximizer - ContentViral Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+        }
+        
+        .headline {
+            font-size: 3rem;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+        
+        .subheadline {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+        
+        .price-tag {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+        
+        .price-strike {
+            text-decoration: line-through;
+            color: #ef4444;
+        }
+        
+        .feature-box {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .cta-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+            }
+            
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, rgba(252, 211, 77, 0.5) 0%, rgba(252, 211, 77, 0.5) 100%);
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50x50" alt="ContentViral Pro Logo" class="h-10">
+                <h1 class="ml-2 text-xl font-bold text-green-600">ContentViral Pro</h1>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center">
+                    <div class="mr-4">
+                        <span class="text-sm font-medium">One-Time Offer:</span>
+                        <span class="ml-2 text-red-600 font-bold">Expires in <span id="countdown">10:00</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <span class="inline-block bg-yellow-400 text-green-900 px-4 py-1 rounded-full text-sm font-bold mb-6">SPECIAL ONE-TIME OFFER</span>
+            <h1 class="headline mb-6">Unlock the Monetization Maximizer</h1>
+            <p class="subheadline mb-8 max-w-4xl mx-auto">Supercharge your affiliate earnings with advanced commission optimization, dynamic product swapping, and professional tracking tools.</p>
+            
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-10 p-6 rounded-xl mb-8">
+                <p class="text-xl font-bold">This Special Upgrade Is Only Available Right Now</p>
+                <p class="text-lg mt-2">You will NOT see this offer again after you leave this page!</p>
+            </div>
+            
+            <div class="flex justify-center">
+                <a href="#pricing" class="cta-button bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold py-4 px-8 rounded-full text-center text-lg transition duration-300">
+                    Yes! Upgrade My Account Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">What If You Could Double or Triple Your Affiliate Earnings?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">The Monetization Maximizer gives you advanced tools to optimize your affiliate links, maximize commissions, and track every penny you earn across all platforms.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://via.placeholder.com/600x400" alt="Commission Optimization Dashboard" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Advanced Commission Optimization</h3>
+                    <p class="text-lg text-gray-700 mb-6">Our intelligent commission optimization system automatically identifies the highest-paying affiliate programs for any product and dynamically swaps your links to maximize earnings on every click.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Real-Time Commission Rate Monitoring</span> - Automatically track commission rates across multiple networks</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Dynamic Product Swapping</span> - Automatically replace products with higher-commission alternatives</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Seasonal Revenue Optimization</span> - Adjust product recommendations based on seasonal trends</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Geographic Earning Potential Analysis</span> - Target products based on regional conversion rates</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+                    <img src="https://via.placeholder.com/600x400" alt="Professional Tracking Dashboard" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Professional Tracking & Attribution</h3>
+                    <p class="text-lg text-gray-700 mb-6">Get enterprise-level tracking and attribution tools that show you exactly where your earnings come from, which content performs best, and how to optimize for maximum revenue.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Multi-Touch Attribution Modeling</span> - Understand the full customer journey from first click to purchase</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Customer Journey Visualization</span> - See exactly how customers interact with your content before buying</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Cohort Analysis and Retention Tracking</span> - Identify your most valuable customer segments</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check text-sm"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700"><span class="font-semibold">Revenue Forecasting with Confidence Intervals</span> - Predict future earnings with statistical accuracy</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Real Results from Real Users</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See how the Monetization Maximizer has transformed earnings for content creators just like you.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://via.placeholder.com/100x100" alt="User Avatar" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">Robert Johnson</h4>
+                            <p class="text-gray-600">Affiliate Marketer</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-center">
+                            <span class="text-green-600 font-bold mr-2">Before:</span>
+                            <span class="text-gray-700">$1,245/month</span>
+                        </div>
+                        <div class="flex items-center mt-1">
+                            <span class="text-green-600 font-bold mr-2">After:</span>
+                            <span class="text-gray-700">$4,872/month</span>
+                        </div>
+                        <div class="flex items-center mt-1">
+                            <span class="text-green-600 font-bold mr-2">Increase:</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">291%</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"The commission optimization alone increased my earnings by 291% in the first month. I'm now earning more from the same amount of traffic simply because the system automatically finds the highest-paying affiliate programs."</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://via.placeholder.com/100x100" alt="User Avatar" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">Jennifer Williams</h4>
+                            <p class="text-gray-600">Content Creator</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-center">
+                            <span class="text-green-600 font-bold mr-2">Before:</span>
+                            <span class="text-gray-700">$2,130/month</span>
+                        </div>
+                        <div class="flex items-center mt-1">
+                            <span class="text-green-600 font-bold mr-2">After:</span>
+                            <span class="text-gray-700">$6,845/month</span>
+                        </div>
+                        <div class="flex items-center mt-1">
+                            <span class="text-green-600 font-bold mr-2">Increase:</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">221%</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"The attribution tracking showed me exactly which content was driving sales, allowing me to focus my efforts on what actually makes money. My earnings more than tripled in just 60 days."</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://via.placeholder.com/100x100" alt="User Avatar" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">Michael Thompson</h4>
+                            <p class="text-gray-600">Digital Marketer</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex items-center">
+                            <span class="text-green-600 font-bold mr-2">Before:</span>
+                            <span class="text-gray-700">$3,450/month</span>
+                        </div>
+                        <div class="flex items-center mt-1">
+                            <span class="text-green-600 font-bold mr-2">After:</span>
+                            <span class="text-gray-700">$9,780/month</span>
+                        </div>
+                        <div class="flex items-center mt-1">
+                            <span class="text-green-600 font-bold mr-2">Increase:</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">183%</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"The geographic targeting feature was a game-changer for me. By showing different products to visitors from different countries, my conversion rates skyrocketed and my earnings nearly tripled."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">ContentViral Pro vs. ContentViral Pro + Monetization Maximizer</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See how much more you get with this powerful upgrade.</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-xl shadow-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-4 px-6 bg-gray-100 text-left text-lg font-bold text-gray-700 uppercase tracking-wider rounded-tl-xl">Features</th>
+                            <th class="py-4 px-6 bg-gray-100 text-center text-lg font-bold text-gray-700 uppercase tracking-wider">ContentViral Pro</th>
+                            <th class="py-4 px-6 bg-green-600 text-center text-lg font-bold text-white uppercase tracking-wider rounded-tr-xl">With Monetization Maximizer</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Basic Affiliate Link Insertion</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Basic Earnings Tracking</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Real-Time Commission Rate Monitoring</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Dynamic Product Swapping</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Seasonal Revenue Optimization</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Geographic Earning Potential Analysis</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Multi-Touch Attribution Modeling</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Customer Journey Visualization</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Cohort Analysis and Retention Tracking</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Revenue Forecasting</td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Average Earnings Increase</td>
+                            <td class="py-4 px-6 text-center font-bold text-gray-700">Baseline</td>
+                            <td class="py-4 px-6 text-center font-bold text-green-600">+200% or more</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm font-bold mb-4">SPECIAL ONE-TIME OFFER</span>
+                <h2 class="text-4xl font-bold mb-4">Unlock the Monetization Maximizer Today</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">This offer is only available right now and will not be offered again.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/3 mb-8 md:mb-0">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Monetization Maximizer</h3>
+                            <ul class="space-y-4 text-white">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Real-Time Commission Rate Monitoring across all networks</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Dynamic Product Swapping for higher earnings</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Seasonal Revenue Optimization strategies</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Geographic Earning Potential Analysis</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Multi-Touch Attribution Modeling</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Customer Journey Visualization and analysis</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-8">
+                                <div class="inline-block bg-white text-green-600 px-4 py-2 rounded-full text-sm font-bold">
+                                    One-Time Special Offer: 50% OFF
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/3 bg-white bg-opacity-10 p-6 rounded-xl text-center">
+                            <div class="text-white mb-4">
+                                <span class="text-lg">Regular Price</span>
+                                <div class="price-strike text-2xl font-bold">$197</div>
+                            </div>
+                            
+                            <div class="text-white mb-6">
+                                <span class="text-lg">Today Only</span>
+                                <div class="price-tag text-yellow-300">$97</div>
+                                <span class="text-lg">one-time payment</span>
+                            </div>
+                            
+                            <a href="#" class="cta-button block w-full bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold py-4 px-6 rounded-xl text-center text-lg transition duration-300 mb-4">
+                                Yes! Add This Upgrade
+                            </a>
+                            
+                            <a href="#" class="block w-full text-white hover:text-gray-200 font-medium py-2 px-6 text-center text-sm transition duration-300">
+                                No thanks, I'll pass on this offer
+                            </a>
+                            
+                            <div class="text-white text-sm mt-4">
+                                <p>30-Day Money-Back Guarantee</p>
+                                <p class="mt-2">Secure Payment</p>
+                                <div class="flex justify-center mt-2">
+                                    <i class="fab fa-cc-visa mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-mastercard mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-amex mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-paypal mx-1 text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="inline-block bg-white border-2 border-green-500 rounded-full p-6 shadow-lg">
+                    <div class="text-green-600 text-4xl mb-2">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">30-Day Money-Back Guarantee</h4>
+                    <p class="text-gray-600 mt-2">If you're not completely satisfied with the Monetization Maximizer, we'll refund your purchase - no questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-green-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Don't Miss This One-Time Opportunity</h2>
+            <p class="text-xl text-green-200 max-w-3xl mx-auto mb-10">The Monetization Maximizer will give you the tools you need to double, triple, or even quadruple your affiliate earnings with the same amount of traffic.</p>
+            
+            <div class="mb-10">
+                <div class="text-white text-2xl md:text-3xl font-bold mb-4">
+                    <span id="countdown-final">10:00</span> Remaining
+                </div>
+                <p class="text-green-200">This offer expires when the timer hits zero</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="cta-button inline-block bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                    Yes! Add This Upgrade Now
+                </a>
+                
+                <a href="#" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-green-600 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                    No Thanks, I'll Pass
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 ContentViral Pro. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Refund Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple countdown timer
+        function updateCountdown() {
+            const countdownEl = document.getElementById('countdown');
+            const countdownFinalEl = document.getElementById('countdown-final');
+            
+            if (!countdownEl || !countdownFinalEl) return;
+            
+            let minutes = 10;
+            let seconds = 0;
+            
+            setInterval(() => {
+                seconds--;
+                
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                }
+                
+                if (minutes < 0) {
+                    minutes = 0;
+                    seconds = 0;
+                }
+                
+                const formattedTime = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                countdownEl.textContent = formattedTime;
+                countdownFinalEl.textContent = formattedTime;
+            }, 1000);
+        }
+        
+        // Initialize countdown
+        document.addEventListener('DOMContentLoaded', updateCountdown);
+    </script>
+</body>
+</html>

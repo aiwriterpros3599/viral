@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentViral Pro - AI-Powered Content Creation & Monetization</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+        
+        .headline {
+            font-size: 3rem;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+        
+        .subheadline {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+        
+        .price-tag {
+            font-size: 4rem;
+            font-weight: 800;
+        }
+        
+        .price-strike {
+            text-decoration: line-through;
+            color: #ef4444;
+        }
+        
+        .feature-box {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .cta-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+            }
+            
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+            }
+            
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+            }
+        }
+        
+        .countdown-timer {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .guarantee-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .guarantee-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, rgba(252, 211, 77, 0.5) 0%, rgba(252, 211, 77, 0.5) 100%);
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="sticky-header bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50x50" alt="ContentViral Pro Logo" class="h-10">
+                <h1 class="ml-2 text-xl font-bold text-indigo-600">ContentViral Pro</h1>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center">
+                    <div class="mr-4">
+                        <span class="text-sm font-medium">Limited Time Offer:</span>
+                        <span class="ml-2 text-red-600 font-bold">Expires in <span id="countdown">23:59:59</span></span>
+                    </div>
+                    <a href="#pricing" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+                        Get Started Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <span class="inline-block bg-indigo-800 text-yellow-300 px-4 py-1 rounded-full text-sm font-bold mb-6">JUST RELEASED</span>
+                    <h1 class="headline mb-6">Create Viral Content & Monetize Across 8+ Platforms In Just 60 Seconds</h1>
+                    <p class="subheadline mb-8">The World's First AI-Powered Content Creation & Monetization Platform That Automatically Inserts Affiliate Links & Tracks Your Earnings</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#pricing" class="cta-button bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-4 px-8 rounded-full text-center text-lg transition duration-300">
+                            Get Instant Access Now
+                        </a>
+                        <a href="#demo" class="bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600 text-white font-bold py-4 px-8 rounded-full text-center text-lg transition duration-300">
+                            Watch Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://via.placeholder.com/600x400" alt="ContentViral Pro Dashboard" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Are You Struggling With These Content Creation Problems?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">If you're like most content creators and marketers, you're probably facing these challenges every day...</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-red-50 p-8 rounded-xl border border-red-100">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Spending Hours Creating Content</h3>
+                    <p class="text-gray-700">You waste hours every day trying to create engaging content for multiple platforms, leaving you exhausted and with little time for anything else.</p>
+                </div>
+                
+                <div class="bg-red-50 p-8 rounded-xl border border-red-100">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Low Engagement & Reach</h3>
+                    <p class="text-gray-700">Your content isn't getting the engagement it deserves because it's not optimized for each platform's unique algorithm and audience preferences.</p>
+                </div>
+                
+                <div class="bg-red-50 p-8 rounded-xl border border-red-100">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Struggling to Monetize</h3>
+                    <p class="text-gray-700">You're creating content but not making money from it because you don't have an effective system to insert affiliate links and track conversions.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-red-50 p-8 rounded-xl border border-red-100">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Inconsistent Results</h3>
+                    <p class="text-gray-700">Your content performance is hit-or-miss because you don't have data-driven insights to guide your strategy and improve over time.</p>
+                </div>
+                
+                <div class="bg-red-50 p-8 rounded-xl border border-red-100">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Too Many Tools & Platforms</h3>
+                    <p class="text-gray-700">You're juggling multiple tools and platforms, making your workflow complicated, expensive, and inefficient.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-bold mb-4">THE SOLUTION</span>
+                <h2 class="text-4xl font-bold mb-4">Introducing ContentViral Pro</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">The all-in-one AI-powered platform that solves all your content creation and monetization problems in one simple dashboard.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://via.placeholder.com/600x400" alt="ContentViral Pro Features" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold">Create Content for 8+ Platforms in 60 Seconds</h3>
+                                <p class="text-gray-600 mt-1">Just input a URL, paste text, or use our keyword research tool, and our AI will generate optimized content for Twitter, LinkedIn, Instagram, Facebook, TikTok, YouTube, Pinterest, and blogs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold">Automatic Affiliate Link Insertion</h3>
+                                <p class="text-gray-600 mt-1">Our AI automatically detects product opportunities in your content and inserts high-converting affiliate links from Amazon, ClickBank, ShareASale, and more.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold">Real-Time Performance Analytics</h3>
+                                <p class="text-gray-600 mt-1">Track engagement, clicks, conversions, and earnings across all platforms with detailed analytics and reporting to optimize your strategy.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold">Viral Trend Detection</h3>
+                                <p class="text-gray-600 mt-1">Our AI analyzes millions of social media posts to identify trending topics before they peak, giving you a competitive edge.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-green-500 text-white">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold">All-in-One Dashboard</h3>
+                                <p class="text-gray-600 mt-1">Manage everything from a single, intuitive dashboard - no more juggling multiple tools and platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Video Section -->
+    <section id="demo" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">See ContentViral Pro in Action</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Watch how easy it is to create viral content and start earning affiliate commissions in just 60 seconds.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-xl shadow-xl flex items-center justify-center">
+                    <img src="https://via.placeholder.com/1280x720" alt="ContentViral Pro Demo Video" class="rounded-xl">
+                    <!-- In a real implementation, this would be a video embed -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white rounded-full w-20 h-20 flex items-center justify-center transition duration-300">
+                            <i class="fas fa-play text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Powerful Features That Make ContentViral Pro Unique</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Everything you need to create, publish, and monetize content across multiple platforms.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI Content Generation</h3>
+                    <p class="text-gray-700">Our advanced AI creates platform-specific content optimized for maximum engagement and conversions.</p>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Platform-specific formatting
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Character limit optimization
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Hashtag recommendations
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Engagement hooks
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Affiliate Monetization</h3>
+                    <p class="text-gray-700">Turn your content into a revenue stream with automatic affiliate link insertion and optimization.</p>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Multi-network integration
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Product matching AI
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Commission optimization
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Conversion tracking
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Performance Analytics</h3>
+                    <p class="text-gray-700">Comprehensive analytics to track and optimize your content performance and earnings.</p>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Cross-platform tracking
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Engagement metrics
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Revenue attribution
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Performance reports
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Trend Detection</h3>
+                    <p class="text-gray-700">Stay ahead of the curve with AI-powered trend detection and content recommendations.</p>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Real-time trend monitoring
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Viral coefficient scoring
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Topic recommendations
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Competitor analysis
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Humanization</h3>
+                    <p class="text-gray-700">Our AI ensures your content feels natural and passes AI detection tools.</p>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Natural language patterns
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Brand voice adaptation
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Emotional tone adjustment
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            AI detection bypass
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="feature-box bg-white p-8 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Management</h3>
+                    <p class="text-gray-700">Organize, edit, and schedule your content from a single dashboard.</p>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Content library
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Version control
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Scheduling calendar
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Team collaboration
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">What Our Users Are Saying</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Join thousands of content creators and marketers who are saving time, increasing engagement, and earning more with ContentViral Pro.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://via.placeholder.com/100x100" alt="John Smith" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">John Smith</h4>
+                            <p class="text-gray-600">Digital Marketer</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic">"ContentViral Pro has completely transformed my content strategy. I'm creating content for multiple platforms in minutes instead of hours, and the affiliate integration has boosted my earnings by 247% in just 30 days!"</p>
+                    <div class="mt-6 flex items-center">
+                        <span class="text-green-600 font-bold mr-2">Results:</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">$3,742 in 30 days</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://via.placeholder.com/100x100" alt="Sarah Johnson" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-600">Content Creator</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic">"As a solo content creator, I was struggling to maintain a presence across multiple platforms. ContentViral Pro solved that problem instantly. Now I'm posting consistently on 8 platforms and my audience has grown by 312% in just 2 months!"</p>
+                    <div class="mt-6 flex items-center">
+                        <span class="text-green-600 font-bold mr-2">Results:</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">312% audience growth</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://via.placeholder.com/100x100" alt="Michael Brown" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold">Michael Brown</h4>
+                            <p class="text-gray-600">Affiliate Marketer</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 italic">"The affiliate integration is a game-changer. ContentViral Pro automatically inserts relevant product links that convert incredibly well. I've made over $5,200 in my first month using the platform. This is the best investment I've made in my business!"</p>
+                    <div class="mt-6 flex items-center">
+                        <span class="text-green-600 font-bold mr-2">Results:</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">$5,200 in first month</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">How ContentViral Pro Compares</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See why ContentViral Pro is the ultimate solution for content creators and marketers.</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-xl shadow-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-4 px-6 bg-gray-100 text-left text-lg font-bold text-gray-700 uppercase tracking-wider rounded-tl-xl">Features</th>
+                            <th class="py-4 px-6 bg-indigo-600 text-center text-lg font-bold text-white uppercase tracking-wider">ContentViral Pro</th>
+                            <th class="py-4 px-6 bg-gray-100 text-center text-lg font-bold text-gray-700 uppercase tracking-wider">Other Solutions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Multi-Platform Content Creation</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Automatic Affiliate Link Insertion</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Viral Trend Detection</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Cross-Platform Analytics</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Content Humanization</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">All-in-One Solution</td>
+                            <td class="py-4 px-6 text-center text-green-600"><i class="fas fa-check-circle text-2xl"></i></td>
+                            <td class="py-4 px-6 text-center text-red-500"><i class="fas fa-times-circle text-2xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Time to Create Content</td>
+                            <td class="py-4 px-6 text-center font-bold text-green-600">60 Seconds</td>
+                            <td class="py-4 px-6 text-center font-bold text-red-500">Hours</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 text-gray-700 font-medium">Monthly Cost</td>
+                            <td class="py-4 px-6 text-center font-bold text-green-600">$47</td>
+                            <td class="py-4 px-6 text-center font-bold text-red-500">$200+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-bold mb-4">LIMITED TIME OFFER</span>
+                <h2 class="text-4xl font-bold mb-4">Get ContentViral Pro Today</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Start creating viral content and earning affiliate commissions in just 60 seconds.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/3 mb-8 md:mb-0">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">ContentViral Pro</h3>
+                            <ul class="space-y-4 text-white">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Create content for 8+ platforms in 60 seconds</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Automatic affiliate link insertion & monetization</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Real-time performance analytics & tracking</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Viral trend detection & content recommendations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>Content humanization & AI detection bypass</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-yellow-300 mt-1 mr-3"></i>
+                                    <span>All-in-one content management dashboard</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-8">
+                                <div class="inline-block bg-white text-indigo-600 px-4 py-2 rounded-full text-sm font-bold">
+                                    Limited Time: 50% OFF
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/3 bg-white bg-opacity-10 p-6 rounded-xl text-center">
+                            <div class="text-white mb-4">
+                                <span class="text-lg">Regular Price</span>
+                                <div class="price-strike text-2xl font-bold">$97/month</div>
+                            </div>
+                            
+                            <div class="text-white mb-6">
+                                <span class="text-lg">Today's Price</span>
+                                <div class="price-tag text-yellow-300">$47</div>
+                                <span class="text-lg">per month</span>
+                            </div>
+                            
+                            <a href="#" class="cta-button block w-full bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-4 px-6 rounded-xl text-center text-lg transition duration-300 mb-4">
+                                Get Instant Access
+                            </a>
+                            
+                            <div class="text-white text-sm">
+                                <p>30-Day Money-Back Guarantee</p>
+                                <p class="mt-2">Secure Payment</p>
+                                <div class="flex justify-center mt-2">
+                                    <i class="fab fa-cc-visa mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-mastercard mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-amex mx-1 text-xl"></i>
+                                    <i class="fab fa-cc-paypal mx-1 text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <div class="guarantee-badge inline-block bg-white border-2 border-green-500 rounded-full p-6 shadow-lg">
+                    <div class="text-green-600 text-4xl mb-2">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800">30-Day Money-Back Guarantee</h4>
+                    <p class="text-gray-600 mt-2">Try ContentViral Pro risk-free for 30 days. If you're not completely satisfied, we'll refund your purchase - no questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Everything you need to know about ContentViral Pro.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">How does ContentViral Pro work?</h3>
+                        <p class="text-gray-600">ContentViral Pro uses advanced AI to analyze your input (URL, text, or keywords) and generate optimized content for multiple platforms. It then automatically inserts relevant affiliate links and provides analytics to track performance and earnings.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Do I need technical skills to use ContentViral Pro?</h3>
+                        <p class="text-gray-600">Not at all! ContentViral Pro is designed to be user-friendly with an intuitive interface. You don't need any technical skills or coding knowledge to create, publish, and monetize content.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Which social media platforms are supported?</h3>
+                        <p class="text-gray-600">ContentViral Pro supports Twitter, LinkedIn, Instagram, Facebook, TikTok, YouTube, Pinterest, and blog content. We're constantly adding more platforms based on user feedback.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Which affiliate networks are integrated?</h3>
+                        <p class="text-gray-600">We support Amazon Associates, ClickBank, ShareASale, Commission Junction, and many more. You can also add your own custom affiliate links and programs.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Is there a limit to how much content I can create?</h3>
+                        <p class="text-gray-600">With our standard plan, you can create unlimited content across all supported platforms. There are no hidden limits or restrictions.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Can I cancel my subscription anytime?</h3>
+                        <p class="text-gray-600">Yes, you can cancel your subscription at any time with just a few clicks from your account dashboard. We also offer a 30-day money-back guarantee for your peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 bg-indigo-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your Content Strategy?</h2>
+            <p class="text-xl text-indigo-200 max-w-3xl mx-auto mb-10">Join thousands of content creators and marketers who are saving time, increasing engagement, and earning more with ContentViral Pro.</p>
+            
+            <div class="mb-10">
+                <div class="countdown-timer text-white mb-4">
+                    <span id="countdown-final">23:59:59</span>
+                </div>
+                <p class="text-indigo-200">Until Special 50% Discount Expires</p>
+            </div>
+            
+            <a href="#" class="cta-button inline-block bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-bold py-6 px-12 rounded-full text-xl md:text-2xl transition duration-300 mb-8">
+                Get ContentViral Pro Now - 50% OFF
+            </a>
+            
+            <p class="text-indigo-200">30-Day Money-Back Guarantee • Secure Payment</p>
+            <div class="flex justify-center mt-2">
+                <i class="fab fa-cc-visa mx-2 text-2xl text-white"></i>
+                <i class="fab fa-cc-mastercard mx-2 text-2xl text-white"></i>
+                <i class="fab fa-cc-amex mx-2 text-2xl text-white"></i>
+                <i class="fab fa-cc-paypal mx-2 text-2xl text-white"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">ContentViral Pro</h3>
+                    <p class="text-gray-400 max-w-xs">The all-in-one AI-powered platform for content creation and monetization.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Company</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white transition duration-300">About Us</a></li>
+                            <li><a href="#" class="hover:text-white transition duration-300">Contact</a></li>
+                            <li><a href="#" class="hover:text-white transition duration-300">Careers</a></li>
+                            <li><a href="#" class="hover:text-white transition duration-300">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Support</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white transition duration-300">Help Center</a></li>
+                            <li><a href="#" class="hover:text-white transition duration-300">Documentation</a></li>
+                            <li><a href="#" class="hover:text-white transition duration-300">Tutorials</a></li>
+                            <li><a href="#" class="hover:text-white transition duration-300">Community</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Legal</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white transition duration-300">Terms of Service</a></li>
+                            <li><a href="#" class="hover:text-white transition duration-300">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-white transition duration-300">Refund Policy</a></li>
+                            <li><a href="#" class="hover:text-white transition duration-300">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 ContentViral Pro. All rights reserved.</p>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple countdown timer
+        function updateCountdown() {
+            const countdownEl = document.getElementById('countdown');
+            const countdownFinalEl = document.getElementById('countdown-final');
+            
+            if (!countdownEl || !countdownFinalEl) return;
+            
+            let hours = 23;
+            let minutes = 59;
+            let seconds = 59;
+            
+            setInterval(() => {
+                seconds--;
+                
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                }
+                
+                if (minutes < 0) {
+                    minutes = 59;
+                    hours--;
+                }
+                
+                if (hours < 0) {
+                    hours = 23;
+                }
+                
+                const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                countdownEl.textContent = formattedTime;
+                countdownFinalEl.textContent = formattedTime;
+            }, 1000);
+        }
+        
+        // Initialize countdown
+        document.addEventListener('DOMContentLoaded', updateCountdown);
+    </script>
+</body>
+</html>
